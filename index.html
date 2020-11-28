@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/style.css" rel="stylesheet">
     <title>Component library</title>
 </head>
+
 <body>
-    <h1>Welcome to Arnav's Component Library.</h1><h1> another heading</h1>
-    <p>I am attending neog.camp and i want to make a library which would   make all my projects looks good and consistent. </p>
+    <h1>Welcome to Arnav's Component Library.</h1>
+    <h1> another heading</h1>
+    <p>I am attending neog.camp and i want to make a library which would make all my projects looks good and consistent.
+    </p>
 
 
-<hr>
+    <hr>
     <h2>@typography</h2>
     <small>this is relatively small text.</small>
     <p>This section will have a <strong>Bold</strong> item.</p>
-<hr>
-<!-- <br> -->
+    <hr>
+    <!-- <br> -->
     <h2>@container</h2>
     <h3>Fluid container</h3>
     <div class="fluid-container">this is a fluid container and will got till the end of the page.</div>
 
     <h3>center container </h3>
     <div class="center-container">this is a centered container and it'll got till the specified width.</div>
-<hr>
+    <hr>
     <h2>@links</h2>
     <a href="https://instagram.com" class="links"> instagram</a>
     <a href="/" class="links primary-links">Primary links</a>
     <a href="/" class="links secondary-links">Secondary Links</a>
 
-<br>
-<hr>
+    <br>
+    <hr>
 
     <div>@Here's lists</div>
     <h3>unordered list</h3>
@@ -72,31 +76,50 @@
             </li>
         </ul>
     </nav>
-    <header>
-        <img src="images/portfolio_landing .svg"> 
-        <h1>heading inside header</h1>
 
+    <hr>
+
+    <h2>@Header</h2>
+    <header class="hero">
+        <img src="images/portfolio_landing .svg" class="hero-image">
+        <h1 class="hero-heading">Heading Inside header</h1>
     </header>
+
     <hr>
+
     <h2>@section</h2>
-    <section>
-        <h3>white section</h3>
-        <p>this is white background</p>
+    <section class="section">
+        <div class="center-container">
+            <h3>white section</h3>
+            <p>The open Web presents incredible opportunities for developers. To take full advantage of these technologies, you need to know how to use them. Below you'll find links to our Web technology documentation.</p>
+        </div>
+
     </section>
-    <section>
-        <h3>Grey section</h3>
-        <p>this is grey background</p>
+
+    <section class="section Off-white">
+        <div class="center-container">
+            <h3>Grey section</h3>
+        <p>The open Web presents incredible opportunities for developers. To take full advantage of these technologies, you need to know how to use them. Below you'll find links to our Web technology documentation.</p>
+        </div>
     </section>
 
     <hr>
-    <footer>
-        <div>some small heading inside footer.</div>
-        <ul>
-            <li>Social 1</li>
-            <li>Social 2</li>
-            <li>Social 3</li>
+
+    <footer class="footer">
+        <div class="footer-head">some small heading inside footer.</div>
+        <ul class="social-links">
+            <li class="list-item-inline ">
+                <a href="/" class="secondary-links links">facebook</a>
+            </li>
+            <li class="list-item-inline ">
+                <a href="/" class="secondary-links links">Linkedin</a>
+            </li>
+            <li class="list-item-inline ">
+                <a href="/" class="secondary-links links">Instagram</a>
+            </li>
         </ul>
     </footer>
 
 </body>
+
 </html>

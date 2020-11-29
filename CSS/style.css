@@ -2,9 +2,9 @@
 
 :root{
     --primary-color: #8131dd;
-    --lightDark: #F5F3FF;
+    --lightDark: #ECFDF5;
     --dark: #2b2a2a;
-    --offWhite: #d4d4d4;
+    --offWhite: #F3F4F6;
 }
 
 body{
@@ -35,14 +35,22 @@ hr{
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     color: blueviolet;
 }
 
+.link-active{
+    border:  1px solid var(--offWhite);
+    
+}
 .primary-links{
     background-color: var(--primary-color);
     color: azure;
     border: 1px solid var(--primary-color);
+}
+
+.tp{
+    margin-top: 1rem;
 }
 
 .secondary-links{
@@ -76,9 +84,8 @@ hr{
 }
 
 .navigation .links{
-    /* float: right; */
     color: white;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .navigation .nav-pills{
@@ -86,12 +93,9 @@ hr{
 
 }
 
-.navigation .link-active{
-    font-weight: bold;
-    color: azure;
-    font-size: large;
+.image-head{
+    border-radius: 50%;
 }
-
 
 /* HEADING */
 .hero{
@@ -136,6 +140,10 @@ hr{
     background-color: var(--lightDark);
 }
 
+section{
+    padding-bottom: 1rem;
+}
+
 
 /* footer */
 .footer{
@@ -144,6 +152,13 @@ hr{
     text-align: center;
     color: white;
 }
+
 .footer ul{
     padding-inline-start: 0px;
+    margin-top:30px;
+}
+
+.footer-head{
+    font-weight: bold;
+    font-size: 30px;
 }

@@ -171,3 +171,8 @@ section{
     font-weight: bold;
     font-size: 30px;
 }
+
+/* blog */
+.underline{
+    text-decoration: underline;
+}

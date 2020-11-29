@@ -176,3 +176,12 @@ section{
 .underline{
     text-decoration: underline;
 }
+
+.inline-links{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.br{
+margin: 10px;
+}

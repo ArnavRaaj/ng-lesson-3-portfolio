@@ -41,7 +41,7 @@ hr{
 
 .link-active{
     border:  1px solid var(--offWhite);
-    
+
 }
 .primary-links{
     background-color: var(--primary-color);
@@ -76,7 +76,8 @@ hr{
     background-color: var(--primary-color);
     padding: 1rem;
     color: white;
-    border-radius : 0rem 1rem;
+    /* border-radius : 0rem 1rem; */
+    border-bottom-right-radius: 2rem;
 }
 
 .navigation .nav-brand{
@@ -90,11 +91,12 @@ hr{
 
 .navigation .nav-pills{
     text-align: right;
-
 }
 
 .image-head{
     border-radius: 50%;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
 
 /* HEADING */
@@ -142,6 +144,7 @@ hr{
 
 section{
     padding-bottom: 1rem;
+    border-radius: 1rem 0rem;
 }
 
 
@@ -151,6 +154,7 @@ section{
     padding: 2rem;
     text-align: center;
     color: white;
+    border-top-left-radius: 2rem;
 }
 
 .footer ul{

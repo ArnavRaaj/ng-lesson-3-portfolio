@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans+Condensed:wght@300&display=swap');
 
 :root{
-    --primary-color: #34D399;
-    --dark: #5B21B6;
-    --offWhite: #F3F4F6;
+    --primary-color: #8131dd;
+    --lightDark: #F5F3FF;
+    --dark: #2b2a2a;
+    --offWhite: #d4d4d4;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
+    max-width: 800px;
+    margin: auto;
 }
 hr{
     margin: 1rem 0rem;
@@ -59,8 +62,8 @@ hr{
     padding: 0rem 0.5rem;
 }
 
-/* Nav */
 
+/* Nav */
 .navigation{
     background-color: var(--primary-color);
     padding: 1rem;
@@ -86,6 +89,7 @@ hr{
 .navigation .link-active{
     font-weight: bold;
     color: azure;
+    font-size: large;
 }
 
 
@@ -105,21 +109,33 @@ hr{
     padding-top: 1rem;
     color: var(--dark);
     font-weight: bold;
+    font-size: 40px;
 }
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
+
 
 /* Section */
 .section h3{
     text-align: center;
     padding: 2rem;
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--primary-color);
 }
-
 .Off-white{
     background-color: var(--offWhite) ;
 }
-
 .center-container{
     padding-bottom:1rem ;
 }
+
+.light-dark{
+    background-color: var(--lightDark);
+}
+
 
 /* footer */
 .footer{
@@ -128,7 +144,6 @@ hr{
     text-align: center;
     color: white;
 }
-
 .footer ul{
     padding-inline-start: 0px;
 }

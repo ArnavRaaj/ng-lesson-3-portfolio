@@ -185,3 +185,12 @@ section{
 .br{
 margin: 10px;
 }
+
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width:320px){
+    body{
+        font-size: 12px;
+    }
+}

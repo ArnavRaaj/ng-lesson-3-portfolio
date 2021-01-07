@@ -169,7 +169,7 @@ hr {
 }
 
 .hero-image {
-    max-width: 350px;
+    max-width: 300px;
     display: block;
     margin: auto;
 }
@@ -215,7 +215,6 @@ section {
     padding: 1rem 0rem;
     border-radius: 1rem 0rem;
     margin-top: 2rem;
-    /* border: 1px black solid ; */
 }
 
 
@@ -227,7 +226,9 @@ section {
     color: white;
     border-bottom-right-radius: 2rem;
     margin-top: 2rem;
-    margin-bottom: 0.5rem;
+    /* max-width: 1200px; */
+    /* margin: auto; */
+    /* width: 700px; */
 }
 
 .footer ul {
@@ -288,6 +289,7 @@ section {
     }
     .list-item-inline {
         display: block;
-        margin: 1.2rem;
+        margin-bottom: 3rem;
     }
+
 }

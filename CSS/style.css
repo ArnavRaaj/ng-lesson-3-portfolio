@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans+Condensed:wght@300&display=swap');
 
 :root{
-    --primary-color: #8131dd;
-    --lightDark: #ECFDF5;
-    --dark: #2b2a2a;
-    --offWhite: #F3F4F6;
+    --background-pri-color: #e0e0e0;
+    --lightDark: #dceee5;
+    --dark: #14122b;
+    --navLink : #011a01;
+    --offWhite : rgb(131, 129, 146);
+    --primary-link-color: #235789;
+    --secondary-link-color: #123456;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
-    max-width: 800px;
+    max-width: 1200px;
+    padding: 0rem;
     margin: auto;
 }
 hr{
@@ -21,7 +25,7 @@ hr{
 .center-container{
     padding-left: 1rem;
     padding-right: 1rem;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
 }
 .fluid-container{
@@ -31,33 +35,65 @@ hr{
 
 
 /* Links */
-.links{
+.nav-links{
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
-    color: blueviolet;
+    color: var(--navLink);
 }
 
 .link-active{
-    border:  1px solid var(--offWhite);
-
+    border:  2px solid var(--navLink);
 }
-.primary-links{
-    background-color: var(--primary-color);
-    color: azure;
-    border: 1px solid var(--primary-color);
+
+.links{
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
     margin-right: 1rem;
+}
+
+.primary-links{
+    background-color: var(--background-pri-color);
+    color: azure;
+    border: 1px solid var(--background-pri-color);
+    
+}
+
+.secondary-links{
+    color: var(--background-pri-color);
+    background-color: azure;    
+    border: 1px solid var(--background-pri-color);
 }
 
 .tp{
     margin-top: 1rem;
 }
 
-.secondary-links{
-    color: var(--primary-color);
-    background-color: azure;    
-    border: 1px solid var(--primary-color);
+.social{
+    color: var(--navLink);
+    font-size: 1.5rem;
+    padding: rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
 }
+
+.facebook:hover{
+    color:blue;
+}
+.twitter:hover{
+    color:rgb(74, 154, 207);
+}
+.instagram:hover{
+    color:rgb(252, 79, 79);
+}
+.linkedin:hover{
+    color:rgb(2, 34, 179);
+}
+.github:hover{
+    color:rgb(41, 41, 41);
+}
+
 
 
 /* Lists */
@@ -73,25 +109,26 @@ hr{
 
 /* Nav */
 .navigation{
-    background-color: var(--primary-color);
+    background-color: var(--background-pri-color);
     padding: 1rem;
     color: white;
-    /* border-radius : 0rem 1rem; */
-    border-radius: 2rem 0rem;
-    margin-top: 0.5rem;
+    border-bottom-right-radius: 2rem;
+    font-weight: bold;
 }
 
-.navigation .nav-brand{
+.nav-brand{
+    color:VAR(--navLink);
     font-weight: bold;
+    font-size: 2rem;
+    font-family: cursive;
 }
 
 .navigation .links{
     color: white;
-    /* border: 1px solid; */
 }
 
 .navigation .nav-pills{
-    text-align: right;
+    text-align: center;
 }
 
 .image-head{
@@ -103,23 +140,26 @@ hr{
 /* HEADING */
 .hero{
     padding: 2rem;
+    text-align: center;
+    color: var(--navLink)
 }
 
-.hero .hero-image{
+.hero-image{
     max-width: 350px;
     display: block;
     margin: auto;
 }
 
-.hero .hero-heading{
+.hero-heading{
     text-align: center;
     padding-top: 1rem;
     color: var(--dark);
     font-weight: bold;
     font-size: 40px;
 }
-.hero .hero-heading .heading-inverted {
-    color: var(--primary-color);
+
+.hero-heading .heading-inverted {
+    color: var(--background-pri-color);
 }
 
 
@@ -129,7 +169,7 @@ hr{
     color: var(--dark);
     font-weight: bold;
     font-size: 30px;
-    color: var(--primary-color);
+    color: var(--background-pri-color);
 }
 
 .Off-white{
@@ -153,11 +193,11 @@ section{
 
 /* footer */
 .footer{
-    background-color: var(--primary-color);
-    padding: 2rem;
+    background-color: var(--background-pri-color);
+    padding: 1rem;
     text-align: center;
     color: white;
-    border-radius: 2rem 0rem;
+    border-bottom-right-radius: 2rem;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
 }
@@ -169,7 +209,13 @@ section{
 
 .footer-head{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
+    font-family: cursive;
+    color: var(--navLink);
+}
+
+.footer-div{
+    color: var(--navLink);
 }
 
 /* blog */
@@ -179,7 +225,7 @@ section{
 
 .inline-links{
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--background-pri-color);
 }
 
 .br{
@@ -189,8 +235,10 @@ margin: 10px;
 
 /* RESPONSIVE DESIGN */
 
-@media only screen and (max-width:320px){
+@media (max-width:768 px){
     body{
-        font-size: 12px;
+        display: flex;
+        max-width: 700px;
+        padding: 0 1.5rem;
     }
 }

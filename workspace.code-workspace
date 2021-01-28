@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"svn.ignoreMissingSvnWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "neogcamp-lesson-3-live"
+	}
+}

@@ -247,6 +247,15 @@ section {
     color: var(--navLink);
 }
 
+.copyright{
+    color: var(--navLink);
+}
+
+.copyright-link{
+    text-decoration: none;
+    color: var(--navLink);
+}
+
 /* blog */
 .underline {
     text-decoration: underline;
